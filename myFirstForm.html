@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+    <style>
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size: 20px;"><b>Mi primer formulario con HTML:</b></p>
+    <form autocomplete="off" method="get" action="index.html" target="_blank" >
+      <fieldset style="width: auto; background-color: rgb(255, 255, 255);"> 
+        <legend style="text-align: left;">Datos Personales</legend>
+        <label for="fname"><b>Nombres:</b></label><br>
+        <input type="text" id="fname" name="fname" placeholder="Your name here" autofocus><br>
+        <br>
+        <label for="lname"><b>Apellidos:</b></label><br>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <p><b>Escoge tu programa favorito:</b></p>
+    
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="js" name="fav_language" value="JavaScript">
+        <label for="js">JavaScript</label>
+    
+
+        <p><b>Escoge los dispositivos que tengas:</b></p>
+    
+        <input type="checkbox" id="pc" name="pc" value="pc">
+        <label for="pc">I have a PC</label><br>
+        <input type="checkbox" id="phone" name="phone" value="phone">
+        <label for="phone">I have a phone</label><br>
+        <br>
+
+        <label for="country">Choose your country:</label>
+        <select name="country" id="country" size="1">
+            <option value="Peru">Peru</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Chile">Chile</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Colombia">Colombia</option>
+            <option value="otro" selected>otro</option>
+        </select><br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required>
+        <p><b>Comentarios:</b></p>
+        <textarea name="message" id="box" cols="50" rows="5"></textarea><br>
+        <br>
+        <input type="submit" value="Send Answers">
+        <button type="button" onclick="alert('Formulario cancelado')">Cancelar</button>
+        <input type="reset">
+      </fieldset> 
+    </form>
+
+</body>
+</html>
