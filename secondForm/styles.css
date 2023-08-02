@@ -1,0 +1,95 @@
+html {
+    background-image: url(https://www.brainmasterperu.com/images/grupo-est-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(14, 26, 47, 0.71);
+    font-size: 18px;
+    color: white;
+    margin: 0%;
+    padding-bottom: 40px;
+}
+
+h1{
+    text-align: center;
+    margin: 0%;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    text-align: center;
+    margin: 0%;
+    padding-top: 0%;
+    padding-bottom: 5rem;
+    font-style: italic;
+
+}
+form {
+    width: 80vw;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(9, 33, 75, 0.821);
+    border-radius: 5px;
+    padding: 40px;
+    
+}
+
+label {
+    display: block;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    width: 97%;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    min-height: 2em;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 99%;
+    border: none;
+    border-radius: 5px;
+}
+
+.boton {
+    background-color: rgb(54, 198, 38);
+    color: whitesmoke;
+    height: 2.5rem;
+    font-size: 18px;
+}
+
+.inline {
+    display: inline;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    padding: 0%;
+  }
+
+.marging {
+    padding: 0%;
+    margin: 0;
+}
