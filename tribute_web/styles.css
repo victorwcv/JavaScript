@@ -1,0 +1,67 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(15, 14, 14, 0.98);
+    color: azure;
+}    
+
+main {
+    background-color: brown;
+    width: 80%;
+    min-width: 400px;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0;
+    padding-bottom: 2rem;
+    
+}
+
+#img-div {
+    background-color: rgba(245, 245, 245, 0.795);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+img {
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+
+#tribute-info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+
+a {
+    display: inline-block;
+    margin: 0 40px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+figcaption {
+    padding: 0 2rem;
+    color: black;
+    font-style: italic;
+    font-size: 1rem;
+}
