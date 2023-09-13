@@ -1,0 +1,147 @@
+:root {
+	--first-color: #f2f2f2;
+	--second-color: #011640;
+	--third-color: #113859;
+	--four-color: #505908;
+	--five-color: #a6a486;
+}
+
+html {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+	box-sizing: border-box;
+}
+
+body {
+	/* background-color: ; */
+	margin: 0;
+}
+
+header nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5rem;
+	background-color: var(--four-color);
+	display: flex;
+	justify-content: flex-end;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+li a {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: var(--first-color);
+	font-size: 1.5rem;
+	transition: linear 0.2s;
+	padding: 1.6rem 3rem;
+
+	&:hover {
+		background-color: var(--first-color);
+		color: var(--second-color);
+	}
+}
+
+#welcome-section {
+	background-image: linear-gradient(45deg, var(--third-color), var(--second-color));
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.title {
+	font-family: 'Courier New', Courier, monospace;
+	color: var(--first-color);
+	width: 80%;
+	text-align: center;
+	font-size: 4.5rem;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px black;
+	margin-bottom: 0;
+}
+
+.subtitle {
+	color: var(--five-color);
+	font-size: 2rem;
+	font-weight: lighter;
+	font-style: italic;
+	text-shadow: 2px 2px 4px black;
+	margin-top: 0;
+}
+
+#projects {
+	width: 100%;
+	/* height: 100vh; */
+	background-color: var(--five-color);
+	padding: 50px 0;
+
+}
+
+.title-projects {
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+	color: var(--first-color);
+	font-size: 3rem;
+	text-shadow: 2px 2px 4px black;
+	font-weight: bold;
+	padding-top: none;
+}
+
+.project-container {
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 30px;
+	width: 90%;
+}
+
+.project-container a {
+	text-decoration: none;
+}
+
+.project-item {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 300px;
+	background-color: var(--first-color);
+	/* box-sizing: border-box; */
+	margin: none;
+	padding: none;
+}
+
+
+.project-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 60px;
+	background-color: var(--third-color);
+	margin: none;
+	padding: none;
+}
+
+#projects img {
+	flex: 1;
+}
+
+
+.project-title p {
+	color: var(--first-color);
+	font-size: 1.3rem;
+}
