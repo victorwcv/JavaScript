@@ -116,7 +116,7 @@ li a {
 	margin: 0;
 }
 
-.project-item {
+.project-tile {
 	display: flex;
 	flex-direction: column;
 	width: 400px;
@@ -154,6 +154,7 @@ li a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	height: 90vh;
 	width: 100%;
 	background: var(--four-color);
@@ -188,10 +189,11 @@ li a {
 .contact-icons a {
 	color: var(--first-color);
 	
-	& :hover {
-		transform: scale(1.1);
-		transition: linear 0.2s;
-	}
+}
+
+.contact-icons a:hover {
+	transform: scale(1.1);
+	transition: linear 0.2s;
 }
 
 footer {
@@ -200,4 +202,13 @@ footer {
 	background-color: var(--third-color);
 	color: var(--first-color);
 	padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+	.contact-icons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 }
