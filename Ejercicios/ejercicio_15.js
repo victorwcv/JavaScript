@@ -4,17 +4,14 @@
 // escribe tu función acá
 
 function capitalizar(string) {
-    
-    if (string !== '') {
-     
-    return string.charAt(0).toUpperCase() + string.slice(1);   
-    }
+  if (string !== "") {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 
-    return '';
-    
+  return "";
 }
 
 // código de prueba
-console.log(capitalizar("pedro")) // "Pedro"
-console.log(capitalizar("hola mundo")) // "Hola mundo"
-console.log(capitalizar("")) // ""
+console.log(capitalizar("pedro")); // "Pedro"
+console.log(capitalizar("hola mundo")); // "Hola mundo"
+console.log(capitalizar("")); // ""
