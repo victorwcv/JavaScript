@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="name">Estamos aprendiendo el DOM</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fuga, dolores, blanditiis veniam corrupti eaque numquam adipisci sed voluptatibus non mollitia. Perspiciatis repellat unde ipsam natus consequuntur nulla, distinctio laudantium?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam illo iusto culpa distinctio natus tenetur obcaecati dolorem praesentium adipisci dignissimos maiores deserunt sed tempora sunt corrupti, repudiandae laboriosam aliquid dolor.</p>
+
+    <ul>
+        <li class="miClase">UNO</li>
+        <li class="miClase">DOS</li>
+        <li class="miClase">TRES</li>
+    </ul>
+    <script>
+        // selecciona solo un elemento el primero que encuentre.
+        document.querySelector('p'); //getElementsByTagName
+        document.querySelector('#name');  //getElementById
+        document.querySelector('.miClase'); //getElementsByClassName
+
+        //selecciona todas las cosas y devuelve un NodeList
+        document.querySelectorAll('.miClase');
+        
+    </script>
+
+</body>
+</html>
