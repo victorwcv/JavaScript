@@ -20,13 +20,13 @@ dando como salida una cuadrícula con el alto y ancho dados.
 
 const tableroDeAjedrez = (num) => {
     let tablero = '';
-    for (let i = 0; i < num; i ++) {
-      for (let j = 0; j < num; j += 2) {
-        if(i % 2 !== 0) {
-          tablero += '# '
-        } else {
-          tablero += ' #'
-        }
+    for (let i = 1; i <= num; i ++) {
+        if(i % 2 !== 0) tablero += " ";
+        else tablero += "#";
+      for (let j = 2; j <= num; j ++) {
+        if(tablero.charAt(tablero.length -1) === " ") {
+            tablero += "#"
+        } else tablero += " "
       }
       tablero += '\n'
     }
