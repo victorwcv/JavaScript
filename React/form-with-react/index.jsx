@@ -1,33 +1,26 @@
 
 function SignUp() {
-  const [year, setYear] = React.useState('');
-  const [name, setName] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
-  const [rememberMe, setRememberMe] = React.useState(false)
+  const [values, handleChange] = useForm({year:'', name:'', email:'', password:'', checkbox:false})
+  
   function handle() {
-    console.log(`year: ${year}`);
-    console.log(`name: ${name}`);
-    console.log(`email: ${email}`);
-    console.log(`password: ${password}`);
-    console.log(`remember-me: ${rememberMe}`);
+    console.log('values: ', values);
   }
 
   return (
     <div>
-      <select value={year} onChange={e => setYear(e.target.value)}>
+      <select name="year" value={values.year} onChange={handleChange}>
         <option >Freshman</option>
         <option >Sophmore</option>
         <option >Junior</option>
         <option >Senior</option>
       </select>
       <div>Name</div>
-      <input type="text" value={name} onChange={e => setName(e.target.value)} />
+      <input name="name" type="text" value={values.name} onChange={handleChange} />
       <div>Email</div>
-      <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
+      <input name="email" type="email" value={values.email} onChange={handleChange} />
       <div>Password</div>
-      <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-      <div><input type="checkbox" value={rememberMe} onChange={e => setRememberMe(e.target.checked)} />Remember me</div>
+      <input name="password" type="password" value={values.password} onChange={handleChange} />
+      <div><input id="asd" name="checkbox" type="checkbox" value={values.checkbox} onChange={handleChange} />Remember me</div>
       <button onClick={ handle } >Submit</button>
     </div>
   )
@@ -35,7 +28,6 @@ function SignUp() {
 
 const appElement = document.getElementById('root');
 const root = ReactDOM.createRoot(appElement).render(<SignUp />);
-root
 
 
 
