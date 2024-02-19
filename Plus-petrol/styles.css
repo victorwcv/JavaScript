@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: gainsboro;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  color: blue;
+  text-shadow: 2px 2px 4px black;
+}
+
+.tables-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.table-item table {
+  max-width: 350px;
+  font-size: 0.5rem;
+}
+
+.table-title {
+  font-size: 1.5rem;
+}
+
+input {
+  width: 80px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: blue;
+  outline: 0;
+}
+
+.porciento {
+  width: 80px;
+}
+
+td {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+td p {
+  margin: 0;
+}
