@@ -1,0 +1,3 @@
+#ignora todos los node_modules recursivamente
+
+node_modules/
