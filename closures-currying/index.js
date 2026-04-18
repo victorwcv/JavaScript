@@ -17,6 +17,40 @@ function saludar(nombre) {
 const saludo = saludar("Will");
 saludo(); // Hola, Will
 
+function createToggler (initialState = false, syncLocalStorage = false, localStorageKey) {
+  let state = initialState
+
+  if (syncLocalStorage) {
+    const localStorageValue = localStorage.getItem(localStorageKey)
+    if(localStorageValue) {
+      state 
+    }
+  }
+
+  return {
+    isOn () {
+      return state
+    },
+    toggle() {
+      state = !state
+      return state
+    },
+    setState(newState) {
+      state = newState
+      return state
+    }
+  }
+}
+
+const sidebarToggler = createToggler() 
+
+sidebarToggler.toggle();
+sidebarToggler.toggle();
+
+
+console.log('estado del sidebar',sidebarToggler.isOn())
+
+
 
 /* 
 !!🧩 Currying
@@ -36,3 +70,5 @@ function multiplicar(a) {
 }
 const por2 = multiplicar(2);
 console.log(por2(5)); // 10
+
+
