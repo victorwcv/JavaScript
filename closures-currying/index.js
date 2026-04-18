@@ -17,29 +17,44 @@ function saludar(nombre) {
 const saludo = saludar("Will");
 saludo(); // Hola, Will
 
-function createToggler (initialState = false, syncLocalStorage = false, localStorageKey) {
-  let state = initialState
-
-  if (syncLocalStorage) {
-    const localStorageValue = localStorage.getItem(localStorageKey)
-    if(localStorageValue) {
-      state 
-    }
+function createToggler(initialState = false, syncLocalStorage = false, localStorageKey) {
+  if (syncLocalStorage && !localStorageKey) {
+    throw new Error("localStorageKey is required when syncLocalStorage is true");
   }
+
+  const storage = syncLocalStorage
+    ? {
+        get: () => {
+          const value = localStorage.getItem(localStorageKey);
+          return value ? JSON.parse(value) : initialState;
+        },
+        set: (value) => {
+          localStorage.setItem(localStorageKey, JSON.stringify(value));
+        }
+      }
+    : null;
+
+  let state = storage ? storage.get() : initialState;
+
+  const persist = () => {
+    if (storage) storage.set(state);
+  };
 
   return {
-    isOn () {
-      return state
+    isOn() {
+      return state;
     },
     toggle() {
-      state = !state
-      return state
+      state = !state;
+      persist();
+      return state;
     },
     setState(newState) {
-      state = newState
-      return state
+      state = newState;
+      persist();
+      return state;
     }
-  }
+  };
 }
 
 const sidebarToggler = createToggler() 
